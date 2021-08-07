@@ -1,0 +1,20 @@
+@use "../abstracts/colors";
+@use "../abstracts/typography";
+
+.btn{
+    text-decoration: none;
+    font-weight: map-get($map: typography.$weights, $key: bold);
+}
+
+.btn--primary{
+    width: 100%;
+    background: colors.$brightBlue;
+    color: white;
+    border-radius: .5em;
+    padding: .8em;
+    box-shadow: 0 1em 1em colors.$tranparentBrightBlue;
+}
+
+.btn--secondary{
+    color: colors.$desaturatedBlue;
+}

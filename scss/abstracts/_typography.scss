@@ -1,6 +1,8 @@
 //# Body Copy
-$regularSize: 1rem;
-$headingSize: 2rem;
+$sizes: (
+  paragraph: 1rem,
+  h1: 1.5rem
+);
 
 //# Font
 $familyStack: "Red Hat Display", sans-serif;;
@@ -11,4 +13,4 @@ $weights: (
 );
 
 //# Default
-$defaultFontRule: map-get($weights, medium) $regularSize $familyStack;
+$defaultFontRule: map-get($weights, medium) map-get($map: $sizes, $key: paragraph) $familyStack;

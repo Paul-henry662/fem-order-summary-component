@@ -1,16 +1,33 @@
 @use "../abstracts/mixins";
 @use "../abstracts/colors";
 
-.main__card{
+.card{
     background: white;
-    width: min(340px, 90%);
-    border-radius: .8em;
-    overflow: hidden;
+    width: max(90%, 120px);
+    max-width: 350px;
+    border-radius: 1em;
+    box-shadow: 0 1.5em 1em colors.$veryTranparentBrightBlue;
 
-    @at-root .main__card__hero{
-        background: url("../../images/illustration-hero.svg") no-repeat, colors.$brightBlue;
-        background-size: cover;
+    @at-root .card__hero{
         height: 160px;
+        border-radius: 1em 1em 0 0;
+    }
+    @at-root .card__body{
+        padding: 2em 10%;
+        text-align: center;
+        @include mixins.displayFlex(column, wrap, center, center);
+        row-gap: 1.5em;
+    }
+    @at-root .card__body__paragraph{
+        max-width: 94%;
+        line-height: 1.75;
+    }
+}
+
+.main__card{
+    @at-root .main__card__hero{
+        background: url("../../images/illustration-hero.svg") no-repeat;
+        background-size: cover;
     }
 }
 

@@ -16,6 +16,26 @@ body {
   color: #7280a7;
 }
 
+h1 {
+  color: #1f2f56;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  color: #1f2f56;
+  font-size: 1rem;
+  font-weight: 700;
+}
+h2 small {
+  display: block;
+  font-size: 1rem;
+  color: #7280a7;
+  font-weight: 500;
+}
+
 .main {
   height: 100%;
   display: flex;
@@ -24,16 +44,99 @@ body {
   justify-content: center;
 }
 
-.main__card {
+.card {
   background: white;
-  width: min(340px, 90%);
-  border-radius: 0.8em;
-  overflow: hidden;
+  width: max(90%, 120px);
+  max-width: 350px;
+  border-radius: 1em;
+  box-shadow: 0 1.5em 1em rgba(56, 41, 224, 0.1);
 }
-.main__card__hero {
-  background: url("../../images/illustration-hero.svg") no-repeat, #3829e0;
-  background-size: cover;
+.card__hero {
   height: 160px;
+  border-radius: 1em 1em 0 0;
+}
+
+.card__body {
+  padding: 2em 10%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5em;
+}
+
+.card__body__paragraph {
+  max-width: 94%;
+  line-height: 1.75;
+}
+
+.main__card__hero {
+  background: url("../../images/illustration-hero.svg") no-repeat;
+  background-size: cover;
+}
+
+.info {
+  width: 100%;
+  background-color: #f5f7ff;
+  border-radius: 0.6em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8em;
+  row-gap: 0.7em;
+  justify-items: center;
+  padding: 0.8em;
+}
+.info .info__link {
+  color: #3829e0;
+  font-weight: 700;
+  margin-left: 2em;
+  font-size: 0.8rem;
+}
+
+.main__card__body__plan::before {
+  content: url("../../images/icon-music.svg");
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn--primary {
+  width: 100%;
+  background: #3829e0;
+  color: white;
+  border-radius: 0.5em;
+  padding: 0.8em;
+  box-shadow: 0 1em 1em rgba(56, 41, 224, 0.25);
+}
+
+.btn--secondary {
+  color: #7280a7;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url("../images/pattern-background-desktop.svg") no-repeat, #e0e8ff;
+    background-size: contain;
+    background-position: top -130px center;
+  }
+}
+
+.btn--primary:hover {
+  background: rgba(56, 41, 224, 0.7);
+}
+
+.btn--secondary:hover {
+  color: #1f2f56;
+}
+
+.info__link:hover, .info__link:visited {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.7);
 }
 
 /*# sourceMappingURL=style.css.map */

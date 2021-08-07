@@ -15,16 +15,33 @@
 
   <body>
     <main class="main">
-      <section class="main__card">
-        <div class="main__card__hero"></div>
-        Order Summary
-        You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!
-        Annual Plan
-        $59.99/year
-        Change
-        Proceed to Payment
-        Cancel Order
+      <section class="card main__card">
+        <div class="card__hero main__card__hero"></div>
+        <div class="card__body main__card__body">
+          <h1>Order Summary</h1>
+
+          <p class="card__body__paragraph main__card__body__paragraph">
+            You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!
+          </p>
+
+          <div class="info main__card__body__plan">
+            <h2>
+              Annual Plan
+              <small>$59.99/year</small>
+            </h2>
+
+            <a href="#" class="info__link">Change</a> 
+          </div>
+
+          <a href="#" class="btn btn--primary main__card__body__btn--primary">
+            Proceed to Payment
+          </a>
+
+          <a href="#" class="btn btn--secondary main__card__body__btn--secondary">
+            Cancel Order
+          </a>
+        </div>
       </section>
     </main>
   </body>

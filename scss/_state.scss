@@ -1,3 +1,33 @@
 @use "./abstracts/typography";
 @use "./abstracts/mixins";
+@use "./abstracts/colors";
+
+body{
+    @include mixins.mediaQuery(tabletLandscape){
+        background: url("../images/pattern-background-desktop.svg") no-repeat, colors.$paleBlue;
+        background-size: contain;
+        background-position: top -130px center;
+    }
+}
+
+.btn--primary{
+    &:hover{
+        background: colors.$brightBlueHover;
+    }
+}
+
+.btn--secondary{
+    &:hover{
+        color: colors.$darkBblue;
+    }
+}
+
+.info{
+    @at-root .info__link{
+        &:hover, &:visited{
+            text-decoration: none;
+            color: colors.$brightBlueHover;
+        }
+    }
+}
 

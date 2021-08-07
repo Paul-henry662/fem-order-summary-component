@@ -1,0 +1,27 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/typography";
+
+.info{
+    width: 100%;
+    background-color: colors.$veryPaleBlue;
+    border-radius: .6em;
+    @include mixins.displayFlex(row, wrap, center, center);
+    column-gap: .8em;
+    row-gap: .7em;
+    justify-items: center;
+    padding: .8em;
+    
+    .info__link{
+        color: colors.$brightBlue;
+        font-weight: map-get($map: typography.$weights, $key: bold);
+        margin-left: 2em;
+        font-size: .8rem;
+    }
+}
+
+.main__card__body__plan{
+    &::before{
+        content: url("../../images/icon-music.svg");
+    }
+}
