@@ -9,10 +9,31 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url("../images/pattern-background-mobile.svg") no-repeat, #e0e8ff;
+  background-size: contain;
   font: 500 1rem "Red Hat Display", sans-serif;
   color: #7280a7;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__card {
+  background: white;
+  width: min(340px, 90%);
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+.main__card__hero {
+  background: url("../../images/illustration-hero.svg") no-repeat, #3829e0;
+  background-size: cover;
+  height: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */

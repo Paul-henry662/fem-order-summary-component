@@ -14,8 +14,9 @@
 
 //Default styles
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url("../images/pattern-background-mobile.svg") no-repeat, colors.$paleBlue;
+  background-size: contain;
   font: typography.$defaultFontRule;
   color: colors.$desaturatedBlue;
 }

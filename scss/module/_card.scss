@@ -1,3 +1,16 @@
 @use "../abstracts/mixins";
 @use "../abstracts/colors";
 
+.main__card{
+    background: white;
+    width: min(340px, 90%);
+    border-radius: .8em;
+    overflow: hidden;
+
+    @at-root .main__card__hero{
+        background: url("../../images/illustration-hero.svg") no-repeat, colors.$brightBlue;
+        background-size: cover;
+        height: 160px;
+    }
+}
+

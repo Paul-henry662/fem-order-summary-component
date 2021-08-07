@@ -1,2 +1,8 @@
 @use "./abstracts/mixins";
 
+.main{
+    height: 100%;
+    @include mixins.displayFlex(column, nowrap, center, center);
+}
+
+
