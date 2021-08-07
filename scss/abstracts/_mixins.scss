@@ -1,0 +1,17 @@
+$breakpoints: (
+  tabletLandscape: 1024px,
+  laptop: 1280px,
+);
+
+@mixin mediaQuery($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin displayFlex($direction, $wrap, $alignItems, $justContent) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $alignItems;
+  justify-content: $justContent;
+}

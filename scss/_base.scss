@@ -1,0 +1,25 @@
+@use "./abstracts/colors";
+@use "./abstracts/typography";
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+//Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+//Default styles
+body {
+  min-height: 100vh;
+  background: url("../images/pattern-background-mobile.svg") no-repeat, colors.$paleBlue;
+  font: typography.$defaultFontRule;
+  color: colors.$desaturatedBlue;
+}
+h1 {
+}
+h2 {
+}

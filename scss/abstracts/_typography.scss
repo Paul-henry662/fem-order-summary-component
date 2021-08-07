@@ -1,0 +1,14 @@
+//# Body Copy
+$regularSize: 1rem;
+$headingSize: 2rem;
+
+//# Font
+$familyStack: "Red Hat Display", sans-serif;
+$weights: (
+  light: 500,
+  regular: 700,
+  bold: 900
+);
+
+//# Default
+$defaultFontRule: map-get($weights, light) $regularSize $familyStack;
