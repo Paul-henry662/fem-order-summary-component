@@ -72,7 +72,7 @@ h2 small {
 }
 
 .main__card__hero {
-  background: url("../../images/illustration-hero.svg") no-repeat;
+  background: url("../images/illustration-hero.svg") no-repeat;
   background-size: cover;
 }
 
@@ -97,7 +97,7 @@ h2 small {
 }
 
 .main__card__body__plan::before {
-  content: url("../../images/icon-music.svg");
+  content: url("../images/icon-music.svg");
 }
 
 .btn {
